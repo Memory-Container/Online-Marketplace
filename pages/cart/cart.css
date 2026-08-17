@@ -1,0 +1,6 @@
+td {
+    place-content: center;
+}
+#searchInput {
+    width: 500px;
+}

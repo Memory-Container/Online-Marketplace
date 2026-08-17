@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night | Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="/shared/css/utils.css">
+    <link rel="stylesheet" href="/shared/css/layout.css">
+    <link rel="stylesheet" href="/shared/css/icon.css">
+    <link rel="stylesheet" href="/shared/css/modal.css">
+</head>
+<body>
+    <header></header>
+    <main class="page-width">
+        <section class="section container py-4">
+            <div class="table-responsive rounded-2 shadow-sm bg-white p-2">
+                <div class="justify-content-between gap-1 d-flex pb-2 flex-wrap">
+                    <div class="w-50" id="search">
+                        <input type="text" class="border-1 border-light-gray w-100 border-radius-3" id="searchInput" placeholder="Search in cart...">
+                    </div>
+                    <div class="justify-content-start d-flex gap-1" id="filter">
+                        <button class="btn btn-sm btn-dark">All</button>
+                        <button class="btn btn-sm btn-dark-outline">Mouse</button>
+                        <button class="btn btn-sm btn-dark-outline">Keyboard</button>
+                        <button class="btn btn-sm btn-dark-outline">Headphones</button>
+                        <button type="button" class="btn btn-sm btn-warning" id="delete" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Clear Cart
+                        </button>
+                    </div>
+                </div>
+                <table class="w-100 table table-light table-bordered align-middle align-middle mb-0 px-2">
+                    <thead>
+                        <tr>
+                            <th class="col-3">Product Name</th>
+                            <th class="col-2">Type</th>
+                            <th class="col-1">Unit Price</th>
+                            <th class="col-1">Quantity</th>
+                            <th class="col-1">Total Price</th>
+                            <th class="text-center col-1">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="product-table col-12" id="cartTable">
+                        <td colspan="6" class="text-center py-4 text-muted">Your cart is empty</td>
+                    </tbody>
+                    <tfoot class="col-12">
+                        <td colspan="6" id="total" class="text-start" style="font-size: 1rem;">
+                            Total: <span class="text-danger fw-bold" id="totalCartPrice"></span>
+                        </td>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+<script src="/shared/js/layout.js"></script>
+<script src="/shared/js/product.js"></script>
+<script src="/shared/js/user.js"></script>
+<script src="/shared/js/cart.js"></script>
+<script src="/shared/js/modal.js"></script>
+<script src="https://kit.fontawesome.com/c4edd7a73c.js" crossorigin="anonymous"></script>
+<script src="cart.js"></script>
+</html>
